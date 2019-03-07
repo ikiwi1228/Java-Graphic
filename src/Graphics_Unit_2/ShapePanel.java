@@ -1,4 +1,4 @@
-package Graphics_Unit_1;
+package Graphics_Unit_2;
 
 //(c) A+ Computer Science
 //www.apluscompsci.com
@@ -8,7 +8,7 @@ package Graphics_Unit_1;
 //Class -
 //Lab  -
 
-import java.awt.Font;
+import java.awt.Font; 
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -43,10 +43,7 @@ public class ShapePanel extends JPanel
 		window.drawString("CREATE YOUR OWN SHAPE!",40,40);
 
 
-		Shape x1 = new Shape(100,100,100,100,Color.RED);
-                x1.draw(window);
-
-		//instantiate a Shape
-		//tell your shape to draw
+		//make a Shape
+		//draw the Shape
 	}
 }
