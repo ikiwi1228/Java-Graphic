@@ -1,4 +1,4 @@
-package Graphics_Unit_2;
+ package Graphics_Unit_2;
 
 //(c) A+ Computer Science
 //www.apluscompsci.com
@@ -6,6 +6,7 @@ package Graphics_Unit_2;
 //Date -
 //Class -
 //Lab  -
+import Graphics_Unit_2.Shape;
 import java.awt.Font;
 import java.awt.Color;
 import java.awt.Graphics;
@@ -38,6 +39,9 @@ public class MovingShapePanel extends JPanel implements Runnable {
         window.setFont(new Font("TAHOMA", Font.BOLD, 18));
         window.drawString("CREATE YOUR OWN SHAPE!", 40, 40);
         
+        
+        sh.draw(window, Color.PINK);
+        sh.moveAndDraw(window);
 		//tell sh to move and draw
          if(!(sh.getX()>=10 && sh.getX()<=730))
          {
